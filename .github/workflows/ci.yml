@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [master]
+    branches: [master, linux-headless]
   pull_request:
-    branches: [master]
+    branches: [master, linux-headless]
 
 permissions:
   contents: read
