@@ -31,6 +31,8 @@ The documented stack is a Python/FastAPI backend, Vue 3/TypeScript frontend, SQL
 
 The README's default production port is 9000, with REMIQORA_HOST and REMIQORA_PORT overrides. This is a repository default, not a verified Jarvis endpoint. Likewise, actual Jarvis installation directories, service names, engine ports, weight variants and GPU assignments remain unverified here. The defaults for other AI services must not be assumed compatible without checking for port conflicts.
 
+**Security:** Remiqora has no built-in authentication. The default host is 127.0.0.1 (local only). Setting REMIQORA_HOST=0.0.0.0 exposes the full UI and API to anyone on the network, so only do that on a trusted network or behind an authenticated reverse proxy.
+
 Linux can opt into separate-GPU engine residency by setting ACE_STEP_DEVICE and YUE2_DEVICE to different explicit device values. Otherwise the documented default is exclusive engine switching. The example 0/1 assignments in the README are examples, not a confirmation of Jarvis configuration.
 
 ## Next host verification
